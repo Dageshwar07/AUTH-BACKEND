@@ -7,10 +7,9 @@ const cors = require("cors");
 const cookiParser = require("cookie-parser")
 const port = 4000;
 
-
-// app.get("/",(req,res)=>{
-//     res.status(201).json("server created")
-// });
+ app.get("/test",(req,res)=>{
+    res.status(201).json("server created")
+});
 
 app.use(express.json());
 app.use(cookiParser());
